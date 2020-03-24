@@ -1,0 +1,18 @@
+<html>
+    <div id="app">
+        <h1>Hello {{ name }}</h1>
+        <h2>Age {{ age }}</h2>
+        <h2>Category:</h2>
+        <h2 v-if="age > 50">Old</h2>
+        <h2 v-else-if="age >= 25">Adult</h2>
+        <h2 v-else>Young</h2>
+
+        <h2>Kategori</h2>
+        <h2 v-show="age > 50">Tua</h2>
+        <h2 v-show="age >= 25">Dewasa</h2>
+        <h2 v-show="age >= 0">Muda</h2>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</html>
