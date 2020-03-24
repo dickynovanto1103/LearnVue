@@ -1,0 +1,16 @@
+<html>
+    <div id="app">
+        <h1>Hello {{ name }}</h1>
+        <ul>
+            <li v-for="member in family">{{ member }}</li>
+            <p>names</p>
+            <li v-for="name in names">{{ name }}</li>
+        </ul>
+        <ul>
+            <li v-for="detail in details">Name: {{ detail.name }}, Hobby: {{ detail.hobby }}</li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</html>
