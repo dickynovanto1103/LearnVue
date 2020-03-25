@@ -1,0 +1,13 @@
+<html>
+    <div id="app">
+        <h1>halo {{ name }}</h1>
+
+        <button v-on:click="value += 1">Increment Value (main func body directly in button)</button><br>
+        <button v-on:click="decrement">Decrement value using methods</button><br>
+        <button @click="dec(value)">Decrement using param value</button>
+        <h1>Value here: {{ value }}</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</html>
