@@ -3,6 +3,7 @@ Vue.component('item-list', {
     template: "<li> {{ item1.name }} {{ item1.name }}</li>"
 })
 
+
 var app = new Vue({
     el : "#app",
     data: {
@@ -13,6 +14,13 @@ var app = new Vue({
         {
             id: 2,
             name: "bolpen"
-        }]
+        }],
+        textinput: ""
+    },
+    methods: {
+        addItem: function(item) {
+            pjg = this.items.length
+            this.items.push({id: pjg+1, name: item})
+        }
     }
 })
