@@ -21,6 +21,7 @@ var app = new Vue({
         addItem: function(item) {
             pjg = this.items.length
             this.items.push({id: pjg+1, name: item})
+            this.textinput = ""
         }
     }
 })
