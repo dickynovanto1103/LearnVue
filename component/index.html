@@ -8,7 +8,7 @@
             <li v-for="item in items" v-bind:key="item.id">{{ item.name }}</li>
         </ol>
 
-        <input type=text name="item" v-model="textinput"> <br>
+        <input type=text name="item" v-model="textinput" @keyup.enter="addItem(textinput)"> <br>
         <button type="submit" v-on:click="addItem(textinput)">Submit</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
